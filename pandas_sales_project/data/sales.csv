@@ -1,0 +1,11 @@
+order_id,customer_name,product,category,quantity,price,order_date,country
+1001,John,Laptop,Electronics,1,1200,5/1/2026,USA
+1002,Sarah,Headphones,electronics,2,150,5/1/2026,USA
+1003,Michael,Desk,Furniture,1,450,5/2/2026,Canada
+1004,Emma,Coffee Mug,Kitchen,5,20,5/3/2026,UK
+1005,David,Laptop,Electronics,1,,5/4/2026,USA
+1005,David,Laptop,Electronics,1,,5/4/2026,USA
+1006,John,Laptop,Electronics,1,1200,5/1/2026,USA
+1006,John,Laptop,Electronics,1,1200,5/1/2026,USA
+1007,Chris,Chair,Furniture,2,-300,5/5/2026,USA
+1008,Sarah,Notebook,Office,3,15,5/6/2026,USA
