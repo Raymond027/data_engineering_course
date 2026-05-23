@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: pokemon_summary
+
+    description: Aggregated Pokémon statistics by primary type
+
+    columns:
+
+      - name: primary_type
+        tests:
+          - not_null
+
+      - name: pokemon_count
+        tests:
+          - not_null

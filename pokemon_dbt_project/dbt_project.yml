@@ -1,0 +1,20 @@
+name: 'pokemon_dbt_project'
+version: '1.0.0'
+
+profile: 'pokemon_dbt_project'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+models:
+  pokemon_dbt_project:
+
+    staging:
+      +materialized: view
+
+    marts:
+      +materialized: table
+
+seeds:
+  pokemon_dbt_project:
+    +schema: raw
