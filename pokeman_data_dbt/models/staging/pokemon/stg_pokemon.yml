@@ -1,0 +1,71 @@
+version: 2
+sources:
+  - name: pokemon_source
+    database: pokemon_db
+    schema: public
+    tables:
+      - name: pokemon_raw
+
+models:
+  - name: stg_pokemon
+    description: "Staging model for cleaned Pokémon dataset"
+
+    columns:
+      - name: pokemon_id
+        description: "Unique identifier for each Pokémon"
+        tests:
+          - not_null
+          - unique
+
+      - name: pokemon_name
+        description: "Name of the Pokémon"
+        tests:
+          - not_null
+
+      - name: primary_type
+        description: "Primary type of Pokémon"
+        tests:
+          - not_null
+
+      - name: secondary_type
+        description: "Secondary type of Pokémon (nullable)"
+
+      - name: hp
+        description: "Hit points of Pokémon"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 1
+
+      - name: attack
+        description: "Attack stat"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+
+      - name: defense
+        description: "Defense stat"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+
+      - name: speed
+        description: "Speed stat"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+
+      - name: generation
+        description: "Generation of Pokémon"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+      - name: is_legendary
+        description: "Whether Pokémon is legendary"
+        tests:
+          - not_null

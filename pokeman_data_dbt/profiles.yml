@@ -1,0 +1,13 @@
+pokemon_project:
+  target: dev
+
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: postgres123
+      port: 5432
+      dbname: pokemon_db
+      schema: analytics
+      threads: 4

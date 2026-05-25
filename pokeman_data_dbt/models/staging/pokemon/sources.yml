@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: pokemon_db
+    schema: public
+
+    tables:
+      - name: pokemon_raw
+        description: Raw Pokémon dataset ingested from source system.
