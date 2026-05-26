@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: sales_summary
+    description: "Aggregated sales metrics"
+
+    columns:
+      - name: order_date
+        tests:
+          - not_null
+
+      - name: product_id
+        tests:
+          - not_null

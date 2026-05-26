@@ -1,0 +1,12 @@
+incremental_sales_etl_dbt:
+  outputs:
+    dev:
+      dbname: sales_warehouse
+      host: localhost
+      pass: postgres123
+      port: 5432
+      schema: analytics
+      threads: 4
+      type: postgres
+      user: postgres
+  target: dev
