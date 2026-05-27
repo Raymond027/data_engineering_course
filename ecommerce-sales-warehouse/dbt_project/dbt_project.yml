@@ -1,0 +1,11 @@
+models:
+  ecommerce_sales_warehouse:
+
+    staging:
+      +materialized: view
+
+    warehouse:
+      +materialized: table
+
+    marts:
+      +materialized: incremental

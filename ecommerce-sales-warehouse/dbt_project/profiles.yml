@@ -1,0 +1,13 @@
+ecommerce_sales_warehouse:
+  outputs:
+
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: postgres123
+      port: 5432
+      dbname: ecommerce_dw
+      schema: warehouse
+
+  target: dev
