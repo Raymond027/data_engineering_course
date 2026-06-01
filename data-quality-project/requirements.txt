@@ -1,0 +1,5 @@
+pandas
+great_expectations
+requests
+sqlalchemy
+python-dotenv

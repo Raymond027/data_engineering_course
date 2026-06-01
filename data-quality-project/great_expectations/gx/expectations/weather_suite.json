@@ -1,0 +1,26 @@
+from great_expectations.dataset import PandasDataset
+
+def validate_weather(df):
+    
+    # Schema checks
+    df.expect_column_to_exist("city")
+    df.expect_column_to_exist("temperature")
+    df.expect_column_to_exist("humidity")
+    df.expect_column_to_exist("timestamp")
+
+    # Null checks
+    df.expect_column_values_to_not_be_null("city")
+    df.expect_column_values_to_not_be_null("temperature")
+    df.expect_column_values_to_not_be_null("timestamp")
+
+    # Business rules
+    df.expect_column_values_to_be_between("temperature", -50, 60)
+    df.expect_column_values_to_be_between("humidity", 0, 100)
+
+    # Freshness check
+    df.expect_column_values_to_not_be_null("timestamp")
+
+    # Uniqueness
+    df.expect_compound_columns_to_be_unique(["city", "timestamp"])
+
+    return df

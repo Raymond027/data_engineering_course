@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  data-quality:
+    build: .
+    container_name: ge_pipeline
+    volumes:
+      - .:/app
