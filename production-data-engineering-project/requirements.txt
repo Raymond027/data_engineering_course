@@ -1,0 +1,6 @@
+pandas
+sqlalchemy
+requests
+tenacity
+psycopg2-binary
+pytest
