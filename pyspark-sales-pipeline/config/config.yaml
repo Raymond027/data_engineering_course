@@ -1,0 +1,11 @@
+app_name: SalesAggregationPipeline
+
+input_path: data/raw/sales.csv
+
+output:
+  sales_summary: output/sales_summary
+  product_summary: output/product_summary
+  region_summary: output/region_summary
+
+spark:
+  shuffle_partitions: 4

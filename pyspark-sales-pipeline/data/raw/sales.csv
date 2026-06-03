@@ -1,0 +1,6 @@
+sale_id,product,category,region,quantity,price,sale_date
+1,Laptop,Electronics,East,2,1200,2025-01-01
+2,Phone,Electronics,West,5,800,2025-01-02
+3,Desk,Furniture,North,3,250,2025-01-03
+4,Chair,Furniture,East,8,120,2025-01-04
+5,Monitor,Electronics,South,4,300,2025-01-05
