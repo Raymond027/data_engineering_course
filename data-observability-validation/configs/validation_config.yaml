@@ -1,0 +1,6 @@
+freshness_threshold_hours: 24
+
+anomaly:
+  z_score_threshold: 3
+
+report_path: data/reports/validation_report.json
