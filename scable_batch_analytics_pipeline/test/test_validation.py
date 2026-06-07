@@ -1,0 +1,1 @@
+from src.validation.validator import validate

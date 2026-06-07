@@ -1,0 +1,5 @@
+app_name: scalable_batch_pipeline
+
+shuffle_partitions: 4
+
+warehouse_dir: data/warehouse

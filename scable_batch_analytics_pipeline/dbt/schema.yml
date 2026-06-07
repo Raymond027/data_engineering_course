@@ -1,0 +1,13 @@
+version: 2
+
+models:
+
+  - name: stg_sales
+
+    tests:
+      - not_null
+
+  - name: sales_summary
+
+    tests:
+      - not_null

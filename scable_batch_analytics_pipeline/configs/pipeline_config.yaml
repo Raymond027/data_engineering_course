@@ -1,0 +1,9 @@
+bronze_path: data/bronze
+
+silver_path: data/silver
+
+gold_path: data/gold
+
+checkpoint_path: metadata/checkpoints
+
+partition_column: order_date
