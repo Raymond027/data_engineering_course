@@ -1,0 +1,16 @@
+pipeline_name: sales_pipeline
+
+schedule: "0 2 * * *"
+
+tables:
+  - customers
+  - orders
+  - products
+
+retries: 3
+
+retry_delay_minutes: 5
+
+sla_minutes: 30
+
+owner: data_engineering
