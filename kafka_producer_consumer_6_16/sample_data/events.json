@@ -1,0 +1,17 @@
+[
+  {
+    "event_type": "user_signup",
+    "user_id": 101,
+    "timestamp": "2026-06-16T10:00:00"
+  },
+  {
+    "event_type": "user_login",
+    "user_id": 102,
+    "timestamp": "2026-06-16T10:05:00"
+  },
+  {
+    "event_type": "order_created",
+    "user_id": 103,
+    "timestamp": "2026-06-16T10:10:00"
+  }
+]
